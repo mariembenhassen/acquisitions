@@ -63,3 +63,5 @@
 {"level":"info","message":"User signed in: mariem12@gmail.com","service":"acquisition-api","timestamp":"2025-11-11T15:03:43.518Z"}
 {"level":"info","message":"::1 - - [11/Nov/2025:15:03:43 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 118 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T15:03:43.519Z"}
 {"level":"info","message":"::1 - - [11/Nov/2025:15:08:40 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 500 1313 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T15:08:40.101Z"}
+{"level":"info","message":"User signed out","service":"acquisition-api","timestamp":"2025-11-11T15:10:29.420Z"}
+{"level":"info","message":"::1 - - [11/Nov/2025:15:10:29 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 200 42 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T15:10:29.428Z"}
