@@ -1,11 +1,13 @@
 import logger from '#config/logger.js';
+import { signupSchema } from '#validations/auth.validation.js';
+import { formatvalidationErrors } from '#utils/format.js';
 
-export const signup = async( req ,resizeBy,next) => {
+export const signup = async (req, res, next) => { 
     try{
         // signup logic here
         const validationResult = signupSchema.safeParse(req.body);
         if(!validationResult.success){
-            return resizeBy.status(400).json({ 
+            return res.status(400).json({ 
                 error: 'validation failed',
                 details: formatvalidationErrors(validationResult.error)
  
@@ -16,7 +18,7 @@ export const signup = async( req ,resizeBy,next) => {
 
         // AUTH SERVICE    
         logger.info(`User signed up: ${email}`);
-        resizeBy.status(201).json({
+        res.status(201).json({
             message: 'User signed up successfully',
              user: { 
                 id:1 , name, email, role
@@ -27,7 +29,7 @@ export const signup = async( req ,resizeBy,next) => {
         logger.error('Signup errror: ', e);
 
         if(e.message == 'User with this email already exists'){
-            return resizeBy.status(409).json({ error: 'Email already exist'});
+            return res.status(409).json({ error: 'Email already exist'});
         }
         next(e);
     }
