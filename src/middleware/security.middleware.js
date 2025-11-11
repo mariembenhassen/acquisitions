@@ -24,6 +24,11 @@ const securityMiddleware = async (req ,res, next) => {
             }
 
             const client = aj.withRule(slidingWindow ({ mode: 'LIVE', interval: '1m', max: limit , name: `${role}-rate-limit` }));
+            const decision = await client.protect(req);
+            if(decision.isDenied() && decision.reason.isBot()){ 
+                logger.warn('Bot request blocked' , { ip: req.ip, userAgent: req.get('User-Agent'), path: req.path });
+                return res.status(403).json({ error: 'Forbidden' ,message: 'Your request has been identified as coming from a bot and has been blocked.' });
+            }
     }catch(e){
         console.error('Arcjet error: ', e);
          res.status(500).json({ error: 'Internal Server Error' });
