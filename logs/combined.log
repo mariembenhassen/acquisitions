@@ -1,2 +1,8 @@
 {"level":"info","message":"Root endpoint accessed","service":"acquisition-api","timestamp":"2025-11-10T23:27:45.117Z"}
 {"level":"info","message":"::1 - - [10/Nov/2025:23:27:45 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\"","service":"acquisition-api","timestamp":"2025-11-10T23:27:45.124Z"}
+{"level":"info","message":"Root endpoint accessed","service":"acquisition-api","timestamp":"2025-11-10T23:38:39.610Z"}
+{"level":"info","message":"::1 - - [10/Nov/2025:23:38:39 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0\"","service":"acquisition-api","timestamp":"2025-11-10T23:38:39.617Z"}
+{"level":"info","message":"Root endpoint accessed","service":"acquisition-api","timestamp":"2025-11-10T23:42:50.301Z"}
+{"level":"info","message":"::1 - - [10/Nov/2025:23:42:50 +0000] \"GET / HTTP/1.1\" 200 13 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-10T23:42:50.303Z"}
+{"level":"info","message":"::1 - - [10/Nov/2025:23:43:05 +0000] \"GET /api HTTP/1.1\" 200 23 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-10T23:43:05.593Z"}
+{"level":"info","message":"::1 - - [10/Nov/2025:23:43:18 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-10T23:43:18.500Z"}
