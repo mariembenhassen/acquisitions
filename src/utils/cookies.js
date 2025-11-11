@@ -5,8 +5,14 @@ export const cookies = {
     sameSite: 'strict',
     maxAge: 15 * 60 * 1000, // 15 minutes
   }),
+
   set: (res, name, value, options = {}) => {
-    res.cookie(name, value, { ...cookies.getOptions(), ...options }); // ✅ fixed here
+    res.cookie(name, value, { ...cookies.getOptions(), ...options });
   },
+
   get: (req, name) => req.cookies[name],
+
+  clear: (res, name, options = {}) => {
+    res.clearCookie(name, { ...cookies.getOptions(), ...options });
+  }
 };

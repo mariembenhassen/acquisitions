@@ -51,3 +51,15 @@
 {"level":"error","message":"Signup errror:  User with this email already exists","service":"acquisition-api","stack":"Error: User with this email already exists\n    at createUser (file:///C:/Users/mariem/Desktop/Docker-courses/api/src/services/auth.service.js:20:43)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///C:/Users/mariem/Desktop/Docker-courses/api/src/controllers/auth.controller.js:21:23)","timestamp":"2025-11-11T14:03:04.798Z"}
 {"level":"info","message":"::1 - - [11/Nov/2025:14:03:04 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T14:03:04.803Z"}
 {"level":"info","message":"::1 - - [11/Nov/2025:14:03:24 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T14:03:24.074Z"}
+{"level":"info","message":"::1 - - [11/Nov/2025:14:11:02 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 59 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T14:11:02.773Z"}
+{"level":"info","message":"User created with email: mariem12@gmail.com","service":"acquisition-api","timestamp":"2025-11-11T14:13:17.571Z"}
+{"level":"info","message":"User signed up: mariem12@gmail.com","service":"acquisition-api","timestamp":"2025-11-11T14:13:17.573Z"}
+{"level":"info","message":"::1 - - [11/Nov/2025:14:13:17 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 118 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T14:13:17.574Z"}
+{"level":"info","message":"User verified: mariem12@gmail.com","service":"acquisition-api","timestamp":"2025-11-11T14:57:26.874Z"}
+{"level":"info","message":"User signed in: mariem12@gmail.com","service":"acquisition-api","timestamp":"2025-11-11T14:57:26.880Z"}
+{"level":"info","message":"::1 - - [11/Nov/2025:14:57:26 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 118 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T14:57:26.885Z"}
+{"level":"info","message":"::1 - - [11/Nov/2025:14:59:09 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 500 1313 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T14:59:09.685Z"}
+{"level":"info","message":"User verified: mariem12@gmail.com","service":"acquisition-api","timestamp":"2025-11-11T15:03:43.516Z"}
+{"level":"info","message":"User signed in: mariem12@gmail.com","service":"acquisition-api","timestamp":"2025-11-11T15:03:43.518Z"}
+{"level":"info","message":"::1 - - [11/Nov/2025:15:03:43 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 118 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T15:03:43.519Z"}
+{"level":"info","message":"::1 - - [11/Nov/2025:15:08:40 +0000] \"POST /api/auth/sign-out HTTP/1.1\" 500 1313 \"-\" \"PostmanRuntime/7.47.1\"","service":"acquisition-api","timestamp":"2025-11-11T15:08:40.101Z"}
